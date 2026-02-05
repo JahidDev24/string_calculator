@@ -100,7 +100,7 @@ The commit history reflects this incremental TDD workflow, with each commit repr
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/string_calculator.git
+git clone https://github.com/JahidDev24/string_calculator.git
 cd string_calculator
 
 # Install dependencies
