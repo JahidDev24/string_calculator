@@ -6,6 +6,7 @@ void main() {
     final calculator = StringCalculator();
     expect(calculator.add(''), 0);
   });
+  // Single number returns test case
   test('Single number returns its value', () {
   final calculator = StringCalculator();
   expect(calculator.add('5'), 5);
