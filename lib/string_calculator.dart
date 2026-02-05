@@ -11,9 +11,14 @@ int add(String numbers) {
   }
 
   values = values.replaceAll('\n', delimiter);
-  final parts = values.split(delimiter);
+  final nums = values.split(delimiter).map(int.parse).toList();
 
-  return parts.map(int.parse).reduce((a, b) => a + b);
+  final negatives = nums.where((n) => n < 0).toList();
+  if (negatives.isNotEmpty) {
+    throw Exception('negative numbers not allowed');
+  }
+
+  return nums.reduce((a, b) => a + b);
 }
 
 }
