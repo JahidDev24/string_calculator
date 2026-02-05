@@ -16,5 +16,11 @@ test('two numbers separated by comma', () {
   final calculator = StringCalculator();
   expect(calculator.add('1,2'), 3);
 });
+// \n for new line delimeter
+test('new line works as delimiter', () {
+  final calculator = StringCalculator();
+  expect(calculator.add('1\n2,3'), 6);
+});
+
 
 }
