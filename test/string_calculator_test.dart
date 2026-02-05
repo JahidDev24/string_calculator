@@ -27,4 +27,14 @@ test('custom delimiter works', () {
   expect(calculator.add('//;\n1;2'), 3);
 });
 
+// lets make netive value execptions 
+test('negative numbers throw error', () {
+  final calculator = StringCalculator();
+
+  expect(
+    () => calculator.add('1,-2'),
+    throwsException,
+  );
+});
+
 }
