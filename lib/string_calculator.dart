@@ -18,7 +18,7 @@ int add(String numbers) {
     throw Exception('negative numbers not allowed');
   }
 
-  return nums.reduce((a, b) => a + b);
+  return  nums.reduce((a, b) =>numbers.contains("*")? a * b : a+b);
 }
 
 }

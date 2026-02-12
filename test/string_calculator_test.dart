@@ -24,7 +24,7 @@ test('new line works as delimiter', () {
 // custam regis based delimiter
 test('custom delimiter works', () {
   final calculator = StringCalculator();
-  expect(calculator.add('//;\n1;2'), 3);
+  expect(calculator.add('//*\n1*2'), 2);
 });
 
 // lets make netive value execptions 
